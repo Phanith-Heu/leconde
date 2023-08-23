@@ -1,0 +1,7 @@
+1. httpswww.leconde.com
+2. https://www.locandaverdenyc.com/about/
+
+
+
+How to Create CSS Animations on Scroll
+https://alvarotrigo.com/blog/css-animations-scroll/

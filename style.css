@@ -1,0 +1,136 @@
+/* General */
+/* html {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+} */
+
+/* body {
+  margin: 20px 0;
+  overflow: auto;
+ 
+  color: #fff;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #F0D8B0;
+  text-decoration: none;
+}
+
+.p-menu1{
+   height: 100vh;
+}
+
+
+/* Hamburger */
+.hamburger1 {
+  height: 5vh;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  /* justify-items: center; */
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: #204740;
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 95vh;
+}
+
+
+/* Menu */
+.menu1 {
+  width: 100%;
+  background-color: #204740;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+  margin-top: 40px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 40px;
+}
+#logo-in-toggle{
+  margin-top: 20px;
+  width: 300px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+  font: 700 20px 'Oswald', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.link1:hover {
+  color: #dba13b;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.logo-icon{
+  width: 30px;
+  background-image: #dba13b;
+}
+.menu-container{
+  background-color: #dba13b;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
